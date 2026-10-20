@@ -30,8 +30,8 @@
       const status = node.querySelector(".deadline-status");
       if (item.done) { status.textContent = "Выполнено"; status.classList.add("done"); }
       else if (validDate(item) && dateOf(item) < new Date()) { status.textContent = "Просрочено"; status.classList.add("overdue"); node.classList.add("past"); }
-      else if (validDate(item) && dateOf(item) - Date.now() < 48 * 3600000) status.textContent = "Скоро";
-      else status.textContent = "В работе";
+      else if (validDate(item) && dateOf(item) - Date.now() < 48 * 3600000) status.textContent = "🔥СРОЧНО!🔥";
+      else status.textContent = "пофик потом";
       node.querySelector(".deadline-title").textContent = item.title;
       node.querySelector(".deadline-description").textContent = item.description || "";
       node.querySelector(".deadline-date").textContent = validDate(item) ? `Сдать до ${dateText(dateOf(item))}` : "Дата не указана";
