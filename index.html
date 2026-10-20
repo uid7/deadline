@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4f4">
+  <title>Дедлайны группы ИТМО</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Главная"><span class="brand-icon">◈</span><span>Дедлайны группы</span></a>
+    <nav class="semesters" aria-label="Семестр">
+      <button class="semester active" data-semester="1">1 семестр</button>
+      <button class="semester" data-semester="2">2 семестр</button>
+    </nav>
+    <div class="topnote">ИТМО · общая шпаргалка</div>
+  </header>
+
+  <div class="layout">
+    <main class="content">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">УЧЁБА БЕЗ СЮРПРИЗОВ</p>
+          <h1 id="pageTitle">1 семестр</h1>
+          <p class="subtitle">Ближайшие сроки, лабораторные и домашние задания — в одном месте.</p>
+        </div>
+        <div class="total-pill"><span class="pulse"></span><span id="activeCount">0 активных задач</span></div>
+      </div>
+
+      <section class="overview" aria-label="Обзор">
+        <article class="overview-card dark-card">
+          <div class="overview-label">СЛЕДУЮЩИЙ ДЕДЛАЙН</div>
+          <div id="nextTitle" class="next-title">Пока нет ближайших дедлайнов</div>
+          <div id="nextSubject" class="muted-on-dark">Добавь задания в deadlines.js</div>
+          <div id="nextCountdown" class="big-countdown">—</div>
+          <div class="count-caption">до срока сдачи</div>
+        </article>
+        <article class="overview-card">
+          <div class="overview-label">ЗАДАЧИ В ЭТОМ СЕМЕСТРЕ</div>
+          <div id="totalCount" class="stat-number">0</div>
+          <div class="stat-caption">всего в списке</div>
+          <div class="mini-progress"><span id="progressBar"></span></div>
+          <div id="progressText" class="stat-caption">0 выполнено</div>
+        </article>
+      </section>
+
+      <section class="toolbar">
+        <div class="section-heading">
+          <div>
+            <h2>Все дедлайны</h2>
+            <p>Сначала показываются ближайшие сроки.</p>
+          </div>
+          <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Найти задание…" autocomplete="off"></label>
+        </div>
+        <div id="filters" class="filters" aria-label="Фильтр по предметам"></div>
+      </section>
+
+      <section id="deadlineList" class="deadline-list" aria-live="polite"></section>
+      <footer class="footer">
+        <span>Сделано для нашей группы ♡</span>
+        <span>Если дата неверная — проверьте источник задания.</span>
+      </footer>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-title">ПРЕДМЕТЫ</div>
+      <button class="side-filter selected" data-filter="all"><span class="side-dot all-dot"></span>Все предметы</button>
+      <div id="subjectLinks"></div>
+      <div class="sidebar-note">
+        <div class="note-icon">✦</div>
+        <strong>Маленькое напоминание</strong>
+        <p>Дедлайн лучше проверить в официальном курсе: расписание иногда меняется.</p>
+      </div>
+      <div class="sidebar-bottom">Группа ИТМО<br><span>учебный план сообщества</span></div>
+    </aside>
+  </div>
+
+  <template id="deadlineTemplate">
+    <article class="deadline-card">
+      <div class="card-main">
+        <div class="card-topline"><span class="subject-tag"></span><span class="status-tag"></span></div>
+        <h3 class="task-title"></h3>
+        <p class="task-description"></p>
+        <div class="card-meta"><span class="due-date"></span><a class="task-link" target="_blank" rel="noopener noreferrer">Открыть задание ↗</a></div>
+      </div>
+      <div class="card-count">
+        <div class="count-label">ОСТАЛОСЬ</div>
+        <div class="count-value"></div>
+        <div class="count-sub"></div>
+      </div>
+    </article>
+  </template>
+
+  <script src="deadlines.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
