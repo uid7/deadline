@@ -101,5 +101,27 @@ window.DEADLINES = [
       { name: "яндекс диск с дз и учебником (учебник есть на гугл диске в разделе предметов)", url: "https://disk.yandex.ru/d/iDQ68umS3ljCfg" }
     ],
     done: false
+  },
+  {
+    id: 8,
+    subject: "Алгоритмы и структуры данных",
+    title: "коллоквиум командный №1 (очный)",
+    description: "надо записать команду, ссылка будет в тгк аисд/дс. БАЛЛЫ КОМАНДНЫЕ. 17:10",
+    due: "2026-11-12T17:10:00+03:00",
+    links: [
+      { name: "yonote", url: "https://dm-aisd.yonote.ru/share/itmo_aisd_colloquium" },
+    ],
+    done: false
+  },
+  {
+    id: 9,
+    subject: "Дискретная математика",
+    title: "коллоквиум индивидуальный 1 (очный)",
+    description: "13:30 группы  М3116, М3118 аудитория 2403; Всего 10 вопросов - один вопрос равен одному баллу ",
+    due: "2026-11-03T17:10:00+03:00",
+    links: [
+      { name: "вопросы к колоквиуму", url: "https://docs.google.com/document/d/1Fv3Zj7aM73tIdvMEdcKiB_vox1dxlIp1mvhvWTd_1qU/edit?usp=sharing" },
+    ],
+    done: false
   }
 ];
