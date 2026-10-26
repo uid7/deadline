@@ -123,5 +123,16 @@ window.DEADLINES = [
       { name: "вопросы к колоквиуму", url: "https://docs.google.com/document/d/1Fv3Zj7aM73tIdvMEdcKiB_vox1dxlIp1mvhvWTd_1qU/edit?usp=sharing" },
     ],
     done: false
+  },
+  {
+    id: 10,
+    subject: "Основы программирования",
+    title: "лаба 3, нулевой дедлайн",
+    description: "-",
+    due: "2026-11-07T23:59:00+03:00",
+    links: [
+      { name: "гпт", url: "https://chatgpt.com/" },
+    ],
+    done: false
   }
 ];
