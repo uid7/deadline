@@ -118,7 +118,7 @@ window.DEADLINES = [
     subject: "Дискретная математика",
     title: "коллоквиум индивидуальный 1 (очный)",
     description: "13:30 группы  М3116, М3118 аудитория 2403; Всего 10 вопросов - один вопрос равен одному баллу ",
-    due: "2026-11-03T17:10:00+03:00",
+    due: "2026-28-10T13:30:00+03:00",
     links: [
       { name: "вопросы к колоквиуму", url: "https://docs.google.com/document/d/1Fv3Zj7aM73tIdvMEdcKiB_vox1dxlIp1mvhvWTd_1qU/edit?usp=sharing" },
     ],
