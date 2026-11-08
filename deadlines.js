@@ -33,7 +33,7 @@ window.DEADLINES = [
     subject: "Основы программирования",
     title: "лаба 3, нулевой дедлайн",
     description: "-",
-    due: "2026-11-07T23:59:00+03:00",
+    due: "2026-11-09T23:59:00+03:00",
     links: [
       { name: "гпт", url: "https://chatgpt.com/" },
     ],
