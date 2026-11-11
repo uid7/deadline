@@ -71,5 +71,16 @@ window.DEADLINES = [
       { name: "таблица", url: "https://docs.yandex.ru/view/public/VarN0cJaLDuTZSK8Xdp8r8OxsIG%2B3b6y%2FKsN8UyyW%2B9sXvcVa6QlvTHPWS59bYZaq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%9C3118-%D0%BC%D0%B0%D1%82%D0%B0%D0%BD.xlsx" },
     ],
     done: false
+  },
+  {
+  id: 7,
+  subject: "Матан",
+  title: "проверка дз 3",
+  description: "5 баллов",
+  due: "2026-11-17T23:59:00+03:00",
+  links: [
+    { name: "таблица", url: "https://docs.yandex.ru/view/public/VarN0cJaLDuTZSK8Xdp8r8OxsIG%2B3b6y%2FKsN8UyyW%2B9sXvcVa6QlvTHPWS59bYZaq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%9C3118-%D0%BC%D0%B0%D1%82%D0%B0%D0%BD.xlsx" },
+  ],
+  done: false
   }
 ];
